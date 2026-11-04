@@ -22,7 +22,7 @@ export default function Greeting() {
             </span>
         </div>
         
-        <div style={{fontSize : "10rem"}}>
+        <div style={{display: "flex", fontSize : "clamp(6rem, 10vw, 10rem)", justifyContent : "center"}}>
             <PopupComp delay = {2000}>
                 <DanceComp move={3} rotate={3} interval={900}>
                     Vito Torres
