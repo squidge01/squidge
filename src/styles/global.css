@@ -1,1 +1,10 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+:root {
+  --font-alata: "Alata", sans-serif;
+}
+
+body{
+    font-family: var(--font-alata);
+    text-align: center;
+}

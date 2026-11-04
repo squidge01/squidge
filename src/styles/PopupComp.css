@@ -1,0 +1,7 @@
+.PopupComp {
+  visibility: hidden;
+}
+
+.PopupComp.visible {
+  visibility: visible;
+}
