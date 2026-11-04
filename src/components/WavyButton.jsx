@@ -1,7 +1,7 @@
 import {useEffect, useState} from "react";
 import "../styles/WavyButton.css";
 
-export default function WavyButton({children, href, onClick, className = ""})
+export default function WavyButton({children, href, onClick = () => {}, className = ""})
 {
 
     const [hovered, setHovered] = useState(false);

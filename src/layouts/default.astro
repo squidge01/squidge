@@ -15,7 +15,10 @@ const {title = "Vito Torres"} = Astro.props;
     </head>
     <body>
         <nav class = "navBar">
-            <WavyButton href = "/" client:load>Here</WavyButton>
+            <WavyButton href = "/" client:load>Home</WavyButton>
+            <WavyButton href = "/images" client:load>Images</WavyButton>
+            <WavyButton href = "/404" client:load>Videos</WavyButton>
+            <WavyButton href = "/404" client:load>Projects</WavyButton>
         </nav>
         <slot />
         <footer>...</footer>
