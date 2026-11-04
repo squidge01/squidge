@@ -1,0 +1,13 @@
+.WavyButton {
+    background-color: white;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.WavyButton.hovered{
+    color: rgba(174, 134, 25, 1);
+}

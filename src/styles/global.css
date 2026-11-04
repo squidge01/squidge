@@ -7,4 +7,26 @@
 body{
     font-family: var(--font-alata);
     text-align: center;
+    color: aliceblue;
+    background-color: grey;
+    margin: 0;
+}
+
+.colorBlock{
+  background-color: darkslateblue;
+}
+
+.empty{
+  background-color: rgba(0,0,0,0);
+  display: inline;
+}
+
+nav.navBar{
+  background-color: rgba(10, 21, 77, 1);
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-size: x-large;
 }

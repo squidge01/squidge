@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css"
+import WavyButton from "../components/WavyButton.jsx"
 const {title = "Vito Torres"} = Astro.props;
 ---
 
@@ -13,7 +14,9 @@ const {title = "Vito Torres"} = Astro.props;
 		<title>{title}</title>
     </head>
     <body>
-        <nav><a href = "/">Home</a></nav>
+        <nav class = "navBar">
+            <WavyButton href = "/" client:load>Here</WavyButton>
+        </nav>
         <slot />
         <footer>...</footer>
     </body>

@@ -24,8 +24,12 @@ export default function Greeting() {
         
         <div style={{display: "flex", fontSize : "clamp(4rem, 10vw, 10rem)", justifyContent : "center"}}>
             <PopupComp delay = {2000}>
-                <DanceComp move={3} rotate={3} interval={900}>
-                    Vito Torres
+                <DanceComp move={3} rotate={1} interval={900}>
+                    <div style={{backgroundColor : "rgba(2, 22, 123, 0.59)"}}>
+                        <DanceComp rotate={1} interval={900}>
+                            Vito Torres
+                        </DanceComp>
+                    </div>
                 </DanceComp>
             </PopupComp>
         </div>
