@@ -26,7 +26,10 @@ nav.navBar{
   position: sticky;
   top: 0px;
   z-index: 10;
-  padding-top: 20px;
-  padding-bottom: 10px;
-  font-size: x-large;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: clamp(0.5rem, 2vw, 2.0rem);
+  padding: 0.75em 0.5em;
+  font-size: clamp(1rem, 4vw, 1.5rem);
 }
