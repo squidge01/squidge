@@ -1,13 +1,31 @@
 ---
 import Layout from "../layouts/default.astro"
 import Greeting from "../components/Greeting.jsx"
+import ArtistStatement from "../content/text/artistStatement.md"
+import DanceComp from "../components/DanceComp"
+import { size } from "astro:schema"
 ---
 
 <Layout>
 	<div class = "colorBlock" style = {{paddingTop: "10vh", paddingBottom: "15vh"}}>
 		<Greeting client:load/>
 	</div>
-	<div style = {{paddingTop: "100px"}}>
-		<p>filler text hahahahahahahahahah<br>hahahahahaahhaha</p>
+	<div style = {{paddingTop: "100px", backgroundColor : "rgba(10, 21, 77, 1)", paddingLeft : "10vw", paddingRight : "10vw", textAlign : "left", paddingBottom : "10vh"}}>
+		<div style = {{fontSize : "4rem", paddingLeft : "6.0rem"}}>
+		<DanceComp move={4} rotate={0} interval={2000} client:load>
+			<h2>
+				<DanceComp move={3} rotate={2} interval={2000} client:load>
+					<span style = {{backgroundColor : "rgba(213, 19, 119, 0.58)", marginRight : "1rem"}}>
+						Who 
+					</span>
+				</DanceComp>
+				  am I?</h2>
+		</DanceComp>
+		</div>
+		<div style = {{backgroundColor : "white", color : "black", padding : "4rem", marginBottom : "rem", fontSize : "1.5rem"}}>
+			<p><ArtistStatement/></p>
+		</div>
+		
+		
 	</div>
 </Layout>
