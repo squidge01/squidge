@@ -21,6 +21,12 @@ const {title = "Vito Torres"} = Astro.props;
             <WavyButton href = "/404" client:load>Projects</WavyButton>
         </nav>
         <slot />
-        <footer>...</footer>
+        <footer>
+            <div style = {{display : "flex", gap : "5vw", justifyContent : "center", paddingBottom : "2rem", paddingTop : "3rem"}}>
+                <a href = "https://www.linkedin.com/in/vito-torres-410099351/">LinkedIn</a>
+                <a href = "https://www.youtube.com/@squidge_01/videos">Youtube</a>
+                <a href = "https://github.com/squidge01">Github</a>
+            </div>
+        </footer>
     </body>
 </html>
