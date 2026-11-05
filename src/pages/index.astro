@@ -10,6 +10,33 @@ import { size } from "astro:schema"
 	<div class = "colorBlock" style = {{paddingTop: "10vh", paddingBottom: "15vh"}}>
 		<Greeting client:load/>
 	</div>
+	<div style = {{paddingTop: "100px", backgroundColor : "rgba(10, 21, 77, 1)", paddingLeft : "10vw", paddingRight : "10vw", textAlign : "left", paddingBottom : "3vh"}}>
+		<div style = {{fontSize : "4rem", paddingLeft : "6.0rem"}}>
+		<DanceComp move={1} rotate={0} interval={3000} client:load>
+			<h2>
+				<DanceComp move={2} rotate={0} interval={2100} client:load>
+					<span style = {{backgroundColor : "rgba(207, 125, 1, 0.56)", marginRight : "1rem"}}>
+						<DanceComp move={2} rotate={0} interval={2000} client:load>
+							What
+						</DanceComp>
+					</span>
+				</DanceComp>
+				  do I
+				<DanceComp move={1} rotate={3} interval={1800} client:load>
+					<span style = {{backgroundColor : "rgba(12, 54, 1, 0.62)", marginLeft : "1rem"}}>
+						<DanceComp move={3} rotate={2} interval={1600} client:load>
+							do? 
+						</DanceComp>
+					</span>
+				</DanceComp>
+			</h2>
+		</DanceComp>
+		</div>
+		<div style = {{backgroundColor : "white", color : "black", padding : "4rem", marginBottom : "rem", fontSize : "1.5rem"}}>
+			<p><ArtistStatement/></p>
+		</div>
+	</div>
+
 	<div style = {{paddingTop: "100px", backgroundColor : "rgba(10, 21, 77, 1)", paddingLeft : "10vw", paddingRight : "10vw", textAlign : "left", paddingBottom : "10vh"}}>
 		<div style = {{fontSize : "4rem", paddingLeft : "6.0rem"}}>
 		<DanceComp move={4} rotate={0} interval={2000} client:load>
@@ -25,7 +52,5 @@ import { size } from "astro:schema"
 		<div style = {{backgroundColor : "white", color : "black", padding : "4rem", marginBottom : "rem", fontSize : "1.5rem"}}>
 			<p><ArtistStatement/></p>
 		</div>
-		
-		
 	</div>
 </Layout>
